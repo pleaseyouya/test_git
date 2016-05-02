@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.qihoo.cube.layout.SquareLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/grid_squarelayout"
+    >
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@color/custom_blue"
+        />
+    <CheckBox
+        android:id="@+id/select_pic_check"
+        style="@style/SetPicCheck"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:checked="false"
+        android:focusable="false" 
+        android:layout_marginTop="5dp"
+        android:gravity="end"
+        />
+</org.qihoo.cube.layout.SquareLayout>

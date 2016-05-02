@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:id="@+id/activity_edit_top"
+        android:background="@color/custom_blue_deep"
+        >
+
+        <ImageButton
+            android:id="@+id/activity_edit_finish"
+            android:layout_width="28dp"
+            android:scaleType="fitXY"
+            android:layout_height="28dp"
+            android:src="@drawable/back_arrow_selector"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="#00000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_edit_title"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/activity_edit_checkall"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:src="@drawable/selectall_selector"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_edit_checkall"
+            android:textSize="@dimen/medium_14_text"
+            android:textColor="@android:color/white"
+            android:background="@drawable/activity_edit_top_checkall" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_edit_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/activity_edit_top"
+        android:layout_marginTop="2dp"
+        android:clickable="true"/>
+
+    <RelativeLayout
+        android:id="@+id/activity_edit_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/activity_edit_delete"
+        android:gravity="center">
+        
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/activity_edit_delete_photo"
+            android:id="@+id/activity_edit_delete_photo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_edit_delete_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_16_text"
+            android:layout_toRightOf="@id/activity_edit_delete_photo"
+            android:layout_marginLeft="6dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

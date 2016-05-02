@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:id="@+id/activity_myphoto_incube_top"
+        android:background="@color/custom_blue_deep"
+        >
+
+        <ImageButton
+            android:id="@+id/activity_myphoto_incube_finish"
+            android:layout_width="28dp"
+            android:scaleType="fitXY"
+            android:layout_height="28dp"
+            android:src="@drawable/back_arrow_selector"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="#00000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_myphoto_add_title"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/activity_myphoto_incube_checkall"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_edit_checkall"
+            android:textSize="@dimen/medium_14_text"
+            android:textColor="@android:color/white"
+            android:background="@drawable/selectall_selector" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/activity_myphoto_incube_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/activity_myphoto_incube_top"
+        android:numColumns="3"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:padding="3dp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/activity_myphoto_incube_delete"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/activity_edit_delete_photo"
+                android:id="@+id/activity_lookphoto_delete_photo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_lookphoto_delete_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_14_text"
+                android:layout_toRightOf="@id/activity_lookphoto_delete_photo"
+                android:layout_marginLeft="6dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_myphoto_incube_returnphoto"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/activity_myphoto_incube_delete"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/grey_button_selector"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/activity_lookphoto_return_photo"
+                android:id="@+id/activity_lookphoto_return_photo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_lookphoto_return_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_14_text"
+                android:layout_toRightOf="@id/activity_lookphoto_return_photo"
+                android:layout_marginLeft="6dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

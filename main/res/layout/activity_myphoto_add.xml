@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:id="@+id/activity_myphoto_add_top"
+        android:background="@color/custom_blue_deep"
+        >
+
+        <ImageButton
+            android:id="@+id/activity_myphoto_add_finish"
+            android:layout_width="28dp"
+            android:scaleType="fitXY"
+            android:layout_height="28dp"
+            android:src="@drawable/back_arrow_selector"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="#00000000"/>
+
+        <TextView
+            android:id="@+id/title_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_myphoto_add_title"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/activity_myphoto_add_check"
+            android:layout_width="40dp"
+            android:layout_height="28dp"
+            android:src="@drawable/edit_selector"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:background="#00000000" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_zone_body"
+        style="@style/BodyLayout"
+        android:layout_below="@id/activity_myphoto_add_top"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_photo_hint"
+            android:textSize="@dimen/medium_14_text"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/hint_magin_top"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/activity_myphoto_add_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_myphoto_add_top"
+        android:visibility="gone"
+        android:numColumns="3"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:padding="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/activity_myphoto_add_addbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/blue_layout_selector"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/activity_myphoto_add_addphoto"
+            android:id="@+id/activity_myphoto_add_add_photo"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_myphoto_add_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_16_text"
+            android:layout_toRightOf="@id/activity_myphoto_add_add_photo"
+            android:layout_marginLeft="6dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:id="@+id/title_bar"
+        android:background="@color/custom_blue_deep"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_myphoto_add_title"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@android:color/white"/>
+
+        <ImageButton
+            android:id="@+id/activity_myphoto_add_checkall"
+            android:layout_width="40dp"
+            android:layout_height="28dp"
+            android:src="@drawable/edit_selector"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:background="#00000000" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/empty_zone_body"
+        style="@style/BodyLayout"
+        android:layout_below = "@id/title_bar"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_album_hint"
+            android:textSize="@dimen/medium_14_text"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/hint_magin_top"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/gallery_listview"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/title_bar"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+    <Button
+        android:id="@+id/btn_add_first_photo"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:background="@drawable/add_selector"
+        />
+    </LinearLayout>
+</RelativeLayout>

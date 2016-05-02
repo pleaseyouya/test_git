@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Cube</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="password_hint">输入6-16位数字密码</string>
+    <string name="entry">进入cube</string>
+    <string name="more_help">更多使用帮助</string>
+
+    <string name="my_cubezone">我的cube空间</string>
+    <string name="new_album_hint">现在,你可以开始新建相册了</string>
+    <string name="new_photo_hint">相册还是空的,快添加照片吧</string>
+
+    <string name="activity_edit_title">编辑我的相册</string>
+    <string name="activity_selectphoto_title">选择照片</string>
+    <string name="activity_myphoto_add_title">我的相册</string>
+
+    <string name="activity_edit_checkall">全选</string>
+    <string name="activity_edit_delete_text">删除相册</string>
+    <string name="activity_lookphoto_delete_text">销毁</string>
+    <string name="activity_lookphoto_return_text">移出cube</string>
+    <string name="activity_selectphoto_grid_return_text">移入cube</string>
+    <string name="activity_myphoto_add_text">增加照片</string>
+
+    <string name="activity_new_photoname_title">新建相册</string>
+    <string name="activity_new_photoname_edit_hint">相册名称</string>
+
+    <string name="album_all">All Photos</string>
+
+    <string name="updateing">正在拼命载入...</string>
+</resources>

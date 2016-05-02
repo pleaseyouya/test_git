@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_myphoto_add_addbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/activity_edit_delete"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/activity_myphoto_add_add_photo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/activity_myphoto_add_addphoto"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tv_myphoto_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_myphoto_add_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_16_text"
+            android:layout_toRightOf="@id/activity_myphoto_add_add_photo"
+            android:layout_marginLeft="6dp"/>
+
+
+    </RelativeLayout>
+
+</merge>

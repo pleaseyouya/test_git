@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:id="@+id/activity_selectphoto_grid_top"
+        android:background="@color/custom_blue_deep"
+        >
+
+        <ImageButton
+            android:id="@+id/activity_selectphoto_grid_finish"
+            android:layout_width="28dp"
+            android:scaleType="fitXY"
+            android:layout_height="28dp"
+            android:src="@drawable/back_arrow_selector"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="#00000000"/>
+
+        <TextView
+            android:id="@+id/activity_selectphoto_grid_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_selectphoto_title"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/activity_selectphoto_grid_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/activity_selectphoto_grid_top"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:background="@color/custom_black"
+        android:padding="3dp"
+        />
+
+    
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/custom_black_3" >
+
+        <TextView
+            android:id="@+id/activity_selectphoto_grid_return"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/blue_layout_selector"
+            android:textColor="@android:color/white"
+            android:text="完成" 
+            android:textSize="@dimen/medium_16_text"/>
+
+        <HorizontalScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/activity_selectphoto_grid_return"
+            android:layout_marginLeft="3dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/selected_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_selectphoto_grid_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:visibility="gone"
+        android:background="#80000000"
+        >
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/activity_selectphoto_grid_rotateloading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:loading_width="5dp"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

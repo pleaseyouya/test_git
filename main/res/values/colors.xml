@@ -1,0 +1,17 @@
+<resources>
+    <color name="custom_blue">#0b71a5</color>
+    <color name="custom_blue_deep" >#3781be</color>
+    <color name="custom_blue_swallow">#6ebae1</color>
+
+    <color name="custom_black">#222222</color>
+    <color name="custom_black_3">#333333</color>
+
+    <color name="custom_grey">#999999</color>
+    <color name="custom_grey_swallow">#b6b6b6</color>
+
+    <color name="spots_dialog_color">@color/custom_blue</color>
+    <color name="custom_blue_light">#6ebae1</color>
+    <color name="custom_grey_light">#b6b6b6</color>
+
+    <color name="button_unclickable">#4895bc</color>
+</resources>
